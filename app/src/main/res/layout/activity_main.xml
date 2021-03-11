@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pein2.futebol.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/statusView"
+        android:text="Digite o nome dos jogadores:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#448aff"
+        android:text="Gerar Times"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/xd"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/statusView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/statusView"
+        android:text="Obs: Separe os nomes por vírgula!" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/statusView"
+        android:entries="@array/linguagens" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xd"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/statusView"
+        android:text="Quantidade de jogadores por equipe:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="42dp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="Desenvolvimento: @JoaoG_Dev" />
+
+</RelativeLayout>
